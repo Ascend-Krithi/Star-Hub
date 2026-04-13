@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="StarHub Automation Suite" parallel="false">
+    <test name="StarHub Functional Tests">
+        <classes>
+            <class name="com.fl.automation.tests.TC542_TestCase"/>
+            <class name="com.fl.automation.tests.TC543_TestCase"/>
+            <class name="com.fl.automation.tests.TC544_TestCase"/>
+            <class name="com.fl.automation.tests.TC545_TestCase"/>
+            <class name="com.fl.automation.tests.TC546_TestCase"/>
+            <class name="com.fl.automation.tests.TC547_TestCase"/>
+            <class name="com.fl.automation.tests.TC548_TestCase"/>
+            <class name="com.fl.automation.tests.TC549_TestCase"/>
+            <class name="com.fl.automation.tests.TC550_TestCase"/>
+            <class name="com.fl.automation.tests.TC551_TestCase"/>
+            <class name="com.fl.automation.tests.TC552_TestCase"/>
+            <class name="com.fl.automation.tests.TC553_TestCase"/>
+            <class name="com.fl.automation.tests.TC554_TestCase"/>
+            <class name="com.fl.automation.tests.TC555_TestCase"/>
+            <class name="com.fl.automation.tests.TC556_TestCase"/>
+            <class name="com.fl.automation.tests.TC557_TestCase"/>
+        </classes>
+    </test>
+</suite>
