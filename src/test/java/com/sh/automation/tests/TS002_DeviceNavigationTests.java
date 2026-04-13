@@ -1,0 +1,34 @@
+package com.sh.automation.tests;
+
+import com.sh.automation.base.BaseTest;
+import com.sh.automation.pages.HomePage;
+import com.sh.automation.pages.AllPhonesPage;
+import com.sh.automation.pages.DeviceDetailPage;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TS002_DeviceNavigationTests extends BaseTest {
+
+    private static final String BASE_URL = "https://www.starhub.com";
+    private static final String DEVICE_NAME = "Samsung Galaxy A57 5G";
+
+    /**
+     * TestRail Case ID: TC553
+     * Test Name: Test Case - SCRUM-22697 TS-003 TC-001
+     */
+    @Test(testName = "TC553", description = "Test Case - SCRUM-22697 TS-003 TC-001", groups = {"TS002", "Functional", "Regression"}, priority = 1)
+    public void verifyDeviceDetailPageLoads() {
+        // Preconditions: None
+        driver.get(BASE_URL);
+        HomePage homePage = new HomePage(driver);
+        Assert.assertTrue(homePage.isLoaded(), "Homepage did not load");
+        homePage.clickMobilesMenu();
+        homePage.clickAllPhones();
+        AllPhonesPage allPhonesPage = new AllPhonesPage(driver);
+        Assert.assertTrue(allPhonesPage.isLoaded(), "All Phones page did not load");
+        Assert.assertTrue(allPhonesPage.isDeviceVisible(DEVICE_NAME), DEVICE_NAME + " is not visible in the list");
+        allPhonesPage.clickDevice(DEVICE_NAME);
+        DeviceDetailPage deviceDetailPage = new DeviceDetailPage(driver);
+        Assert.assertTrue(deviceDetailPage.isLoaded(), "Device detail page did not load");
+    }
+}
