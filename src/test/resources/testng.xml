@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="StarHub Automation Suite" parallel="false">
+    <test name="StarHub Functional Tests">
+        <groups>
+            <run>
+                <include name="Functional"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.fl.automation.tests.TS001_PhoneListingTests_TC551"/>
+            <class name="com.fl.automation.tests.TS001_PhoneListingTests_TC552"/>
+            <class name="com.fl.automation.tests.TS002_DeviceNavigationTests_TC553"/>
+            <class name="com.fl.automation.tests.TS003_DeviceConfigurationTests_TC554"/>
+            <class name="com.fl.automation.tests.TS004_NextButtonTests_TC555"/>
+            <class name="com.fl.automation.tests.TS005_LoginPopupTests_TC556"/>
+            <class name="com.fl.automation.tests.TS005_LoginPopupTests_TC557"/>
+        </classes>
+    </test>
+</suite>
