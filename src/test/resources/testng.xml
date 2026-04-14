@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="StarHub_Functional_Tests" parallel="false">
+    <test name="StarHub_Automation">
+        <classes>
+            <class name="com.sh.automation.tests.TC551_AllPhonesPageLoadsViaMenuTest" />
+            <class name="com.sh.automation.tests.TC552_AtLeastOneDeviceListedTest" />
+            <class name="com.sh.automation.tests.TC553_DeviceDetailPageLoadsTest" />
+            <class name="com.sh.automation.tests.TC554_DefaultSelectionsOnDevicePageTest" />
+            <class name="com.sh.automation.tests.TC555_NextButtonNavigatesToNextStepTest" />
+            <class name="com.sh.automation.tests.TC556_LoginPopupAppearsWhenNotLoggedInTest" />
+            <class name="com.sh.automation.tests.TC557_NoPopupWhenLoggedInTest" />
+        </classes>
+    </test>
+</suite>
