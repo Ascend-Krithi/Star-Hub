@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="StarHub Automation Suite">
+    <test name="StarHub Functional Tests">
+        <classes>
+            <class name="com.starhub.tests.TS001_PhoneListingTests_TC551"/>
+            <class name="com.starhub.tests.TS001_PhoneListingTests_TC552"/>
+            <class name="com.starhub.tests.TS002_DeviceNavigationTests_TC553"/>
+            <class name="com.starhub.tests.TS003_DeviceConfigurationTests_TC554"/>
+            <class name="com.starhub.tests.TS004_NextButtonTests_TC555"/>
+            <class name="com.starhub.tests.TS005_LoginPopupTests_TC556"/>
+            <class name="com.starhub.tests.TS005_LoginPopupTests_TC557"/>
+        </classes>
+    </test>
+</suite>
