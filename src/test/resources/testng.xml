@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="StarHub Automation Suite" parallel="false">
+    <test name="StarHub Functional Tests">
+        <groups>
+            <run>
+                <include name="Functional"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.sh.automation.tests"/>
+        </packages>
+    </test>
+</suite>
