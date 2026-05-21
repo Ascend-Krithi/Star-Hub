@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="StarHub_FootLocker_Suite" verbose="1">
+    <test name="FootLocker_Functional_Tests">
+        <classes>
+            <class name="com.sh.automation.tests.TC1916_SunLifeHomepageLoadTest"/>
+            <class name="com.sh.automation.tests.TC1917_SunLifeHomepageElementsTest"/>
+            <class name="com.sh.automation.tests.TC1918_SunLifeClaimFilingContentTest"/>
+            <class name="com.sh.automation.tests.TC1919_SunLifeClaimButtonTest"/>
+            <class name="com.sh.automation.tests.TC1920_SunLifeClaimInputSectionsTest"/>
+            <class name="com.sh.automation.tests.TC1944_SunLifeHomepageLoadTest"/>
+            <class name="com.sh.automation.tests.TC1945_SunLifeHomepageElementsTest"/>
+            <class name="com.sh.automation.tests.TC1946_SunLifeClaimFilingContentTest"/>
+            <class name="com.sh.automation.tests.TC1947_SunLifeClaimButtonTest"/>
+            <class name="com.sh.automation.tests.TC1948_SunLifeClaimInputSectionsTest"/>
+            <class name="com.sh.automation.tests.TC1949_SunLifeClaimMandatoryFieldsValidationTest"/>
+        </classes>
+    </test>
+</suite>
