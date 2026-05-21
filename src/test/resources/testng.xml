@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="StarHub_FootLocker_Suite" verbose="1">
+  <test name="FootLocker_Functional_Tests">
+    <classes>
+      <class name="com.sh.automation.tests.TC1916_SunLifeHomepageLoadTest"/>
+      <class name="com.sh.automation.tests.TC1917_SunLifeHomepageElementsTest"/>
+      <class name="com.sh.automation.tests.TC1918_SunLifeClaimPageContentTest"/>
+      <class name="com.sh.automation.tests.TC1919_SunLifeClaimButtonTest"/>
+      <class name="com.sh.automation.tests.TC1920_SunLifeClaimInputSectionsTest"/>
+      <class name="com.sh.automation.tests.TC1944_SunLifeHomepageLoadTest"/>
+      <class name="com.sh.automation.tests.TC1945_SunLifeHomepageElementsTest"/>
+      <class name="com.sh.automation.tests.TC1946_SunLifeClaimPageContentTest"/>
+      <class name="com.sh.automation.tests.TC1947_SunLifeClaimButtonTest"/>
+      <class name="com.sh.automation.tests.TC1948_SunLifeClaimInputSectionsTest"/>
+      <class name="com.sh.automation.tests.TC1949_SunLifeClaimMandatoryFieldsValidationTest"/>
+      <class name="com.sh.automation.tests.TC1950_SunLifeClaimEmailValidationTest"/>
+      <class name="com.sh.automation.tests.TC1951_SunLifeClaimPolicyNumberValidationTest"/>
+      <class name="com.sh.automation.tests.TC1952_SunLifeClaimSubmissionTest"/>
+      <class name="com.sh.automation.tests.TC1953_SunLifeClaimMandatoryFieldsSubmissionTest"/>
+    </classes>
+  </test>
+</suite>
