@@ -1,0 +1,32 @@
+const locators = {
+  emailField: (page) => page.locator('input[type="email"], input[name="email"], #email').first(),
+  passwordField: (page) => page.locator('input[type="password"], input[name="password"], #password').first(),
+  loginButton: (page) => page.locator('button[type="submit"], button:has-text("Login"), input[type="submit"]').first(),
+  errorMessage: (page) => page.locator('.error-message, .alert-danger, [role="alert"]').first(),
+  welcomeMessage: (page) => page.locator('.welcome-message, h1, .greeting').first(),
+  businessNameField: (page) => page.locator('[data-testid="business-name"], .business-name, #businessName').first(),
+  registrationNumberField: (page) => page.locator('[data-testid="registration-number"], .registration-number, #registrationNumber').first(),
+  gstNumberField: (page) => page.locator('[data-testid="gst-number"], .gst-number, #gstNumber').first(),
+  contactPersonName: (page) => page.locator('[data-testid="contact-person"], .contact-person, #contactPerson').first(),
+  maskedMobile: (page) => page.locator('[data-testid="masked-mobile"], .masked-mobile, #maskedMobile').first(),
+  maskedEmail: (page) => page.locator('[data-testid="masked-email"], .masked-email, #maskedEmail').first(),
+  tipsSection: (page) => page.locator('[data-testid="tips"], .tips, .instructions').first(),
+  acknowledgementCheckbox: (page) => page.locator('input[type="checkbox"][name="acknowledgement"], #acknowledgement').first(),
+  continueButton: (page) => page.locator('button:has-text("Continue"), .continue-btn, #continueBtn').first(),
+  inlineErrorMessage: (page) => page.locator('.inline-error, .checkbox-error, .validation-error').first(),
+  dashboardHeader: (page) => page.locator('.dashboard-header, h1:has-text("Dashboard"), [data-testid="dashboard"]').first(),
+  userManagementMenu: (page) => page.locator('a:has-text("User Management"), [href*="user-management"]').first(),
+  systemSettingsMenu: (page) => page.locator('a:has-text("System Settings"), [href*="settings"]').first(),
+  reportsMenu: (page) => page.locator('a:has-text("Reports"), [href*="reports"]').first(),
+  dealerManagementMenu: (page) => page.locator('a:has-text("Dealer Management"), [href*="dealer-management"]').first(),
+  teamReportsMenu: (page) => page.locator('a:has-text("Team Reports"), [href*="team-reports"]').first(),
+  inventoryManagementMenu: (page) => page.locator('a:has-text("Inventory Management"), [href*="inventory"]').first(),
+  customerManagementMenu: (page) => page.locator('a:has-text("Customer Management"), [href*="customer"]').first(),
+  salesOrdersMenu: (page) => page.locator('a:has-text("Sales Orders"), [href*="sales"]').first(),
+  logoutButton: (page) => page.locator('button:has-text("Logout"), a:has-text("Logout"), .logout-btn').first(),
+  userProfileMenu: (page) => page.locator('.user-profile, .user-menu, [data-testid="user-menu"]').first(),
+  sessionTimeoutMessage: (page) => page.locator('.session-timeout, .timeout-message, [role="alert"]:has-text("session")').first(),
+  securityMessage: (page) => page.locator('.security-message, .security-alert, [role="alert"]:has-text("security")').first()
+};
+
+module.exports = locators;
